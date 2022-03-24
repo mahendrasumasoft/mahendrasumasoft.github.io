@@ -1,1 +1,474 @@
+{
+  "app_version": "0.7.5",
+  "config_version": 10,
+  "LastModifiedTime": "2022-02-15 09:00:00 +0000",
+  "initialStartupSelection": "hoc",
+  "isCustomersHFA": "true",
+  "urls": {
+    "hoc": {
+      "api": {
+        "production": "https://parlvu.parl.gc.ca/harmony/en/api/data",
+        "development": "https://parlvucloud-dt.parlissi.gc.ca/Harmony/en/api/data",
+        "staging": "http://d-origin-hoc-c.canadacentral.cloudapp.azure.com/Harmony/en/api/data"
+      },
+      "stream": {
+        "production": "https://parlvu.parl.gc.ca/harmony/en/api/PowerBrowserData",
+        "development": "https://parlvucloud-dt.parlissi.gc.ca/Harmony/en/api/PowerBrowserData",
+        "staging": "http://d-origin-hoc-c.canadacentral.cloudapp.azure.com/Harmony/en/api/PowerBrowserData"
+      },
+      "command_channel": {
+        "production": "http://52.242.23.183/AppTVWeb",
+        "development": "http://52.242.23.183/AppTVWeb",
+        "staging": "http://52.242.23.183/AppTVWeb"
+      },
+      "command_channel_api": {
+        "production": "http://52.242.23.183/AppTVWeb/api/Data",
+        "development": "http://52.242.23.183/AppTVWeb/api/Data",
+        "staging": "http://52.242.23.183/AppTVWeb/api/Data"
+      },
+      "api_v1": {
+        "production": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo",
+        "development": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo",
+        "staging": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo"
+      },
+      "api_v2": {
+        "production": "https://edipa-apm-hdd-cace.azure-api.net/edipa",
+        "development": "https://edipa-apm-hdd-cace.azure-api.net/edipa",
+        "staging": "https://edipa-apm-hdd-cace.azure-api.net/edipa"
+      },
+      "api_mock": {
+        "production": "http://192.168.0.15/meetings",
+        "development": "http://hoc-mp-info.herokuapp.com",
+        "staging": "http://127.0.0.1:5000"
+      },
+      "supplemental_services": {
+        "production": "http://iptvdev.canadaeast.cloudapp.azure.com",
+        "development": "http://iptvdev.canadaeast.cloudapp.azure.com",
+        "staging": "http://192.168.0.15"
+      },
+      "metadata": {
+        "production": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo/signalr",
+        "development": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo/signalr",
+        "staging": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo/signalr"
+      },
+      "metadata2": {
+        "production": "http://iptvdev.canadaeast.cloudapp.azure.com/WebHookRelay",
+        "development": "http://iptvdev.canadaeast.cloudapp.azure.com/WebHookRelay",
+        "staging": "http://iptvdev.canadaeast.cloudapp.azure.com/WebHookRelay"
+      },
+      "generator_guid": {
+        "production": "https://www.uuidgenerator.net/api/version1",
+        "development": "https://www.uuidgenerator.net/api/version1",
+        "staging": "https://www.uuidgenerator.net/api/version1"
+      },
+      "generator_qr_code": {
+        "production": "https://api.qrserver.com/v1/create-qr-code",
+        "development": "https://api.qrserver.com/v1/create-qr-code",
+        "staging": "https://api.qrserver.com/v1/create-qr-code"
+      },
+      "platform_login": {
+        "production": "https://sliqnew.b2clogin.com/sliqnew.onmicrosoft.com/B2C_1A_signup_signin_sliq/v2.0/.well-known/openid-configuration",
+        "development": "https://platformdev1.b2clogin.com/platformdev1.onmicrosoft.com/B2C_1A_signup_signin_sliq/v2.0/.well-known/openid-configuration",
+        "staging": "https://platformstaging.b2clogin.com/platformstaging.onmicrosoft.com/B2C_1A_signup_signin_sliq/v2.0/.well-known/openid-configuration"
+      },
+      "platform_login_scope": {
+        "production": "https://sliqnew.onmicrosoft.com/usermanagementapi/ACL.Read",
+        "development": "https://PlatformDev1.onmicrosoft.com/sliqapi/Access",
+        "staging": "https://Platformstaging.onmicrosoft.com/sliqapi/Access"
+      },
+      "platform_login_client_id": {
+        "production": "7f12870f-1631-4a44-a096-4ed1e860145c",
+        "development": "2cd995b4-cc63-42fe-a782-d784b83004d1",
+        "staging": "a1d31213-cee0-40f5-b80e-55993daee740"
+      },
+      "platform_login_redirect_url": {
+        "production": "com.sliq.parlvu://oauth2/redirect",
+        "development": "com.sliq.parlvu://oauth2/redirect",
+        "staging": "com.sliq.parlvu://oauth2/redirect"
+      },
+      "youtube_login": {
+        "production": {
+          "android_client_id": "290473715391-b3g1rgphe54l5s7o4nufc59sm4tbs5is.apps.googleusercontent.com",
+          "ios_client_id": "290473715391-jd9o7n9219npsbghihesntngb0l95rk2.apps.googleusercontent.com",
+          "android_redirect_url": "com.sliq.parlvu://",
+          "ios_redirect_url": "com.sliq.ParlVU-XP://"
+        },
+        "development": {
+          "android_client_id": "290473715391-b3g1rgphe54l5s7o4nufc59sm4tbs5is.apps.googleusercontent.com",
+          "ios_client_id": "290473715391-jd9o7n9219npsbghihesntngb0l95rk2.apps.googleusercontent.com",
+          "android_redirect_url": "com.sliq.parlvu://",
+          "ios_redirect_url": "com.sliq.ParlVU-XP://"
+        },
+        "staging": {
+          "android_client_id": "290473715391-b3g1rgphe54l5s7o4nufc59sm4tbs5is.apps.googleusercontent.com",
+          "ios_client_id": "290473715391-jd9o7n9219npsbghihesntngb0l95rk2.apps.googleusercontent.com",
+          "android_redirect_url": "com.sliq.parlvu://",
+          "ios_redirect_url": "com.sliq.ParlVU-XP://"
+        }
+      },
+      "restream_token_api": {
+        "production": "https://sliq.stream/RestreamTokenAPI",
+        "development": "https://dev.sliq.stream/RestreamTokenAPI",
+        "staging": "https://staging.sliq.stream/RestreamTokenAPI"
+      },
+      "clip_edit_web": {
+        "production": "https://parlvucewa.parl.gc.ca",
+        "development": "https://parlvucewa.parl.gc.ca",
+        "staging": "https://parlvucewa.parl.gc.ca"
+      },
+      "clip_edit_publish": {
+        "production": "https://socialmultipublish.azurewebsites.net",
+        "development": "https://socialmultipublish.azurewebsites.net",
+        "staging": "https://socialmultipublish.azurewebsites.net"
+      }
+    },
+    "soc": {
+      "api": {
+        "production": "https://senparlvu.parl.gc.ca/harmony/en/api/data",
+        "development": "https://senparlvucloud-dt.parlissi.gc.ca/Harmony/en/api/data",
+        "staging": "http://d-origin-hoc-c.canadacentral.cloudapp.azure.com/Harmony/en/api/data"
+      },
+      "stream": {
+        "production": "https://senparlvu.parl.gc.ca/harmony/en/api/PowerBrowserData",
+        "development": "https://senparlvucloud-dt.parlissi.gc.ca/Harmony/en/api/PowerBrowserData",
+        "staging": "http://d-origin-hoc-c.canadacentral.cloudapp.azure.com/Harmony/en/api/PowerBrowserData"
+      },
+      "command_channel": {
+        "production": "http://52.242.23.183/AppTVWeb",
+        "development": "http://52.242.23.183/AppTVWeb",
+        "staging": "http://52.242.23.183/AppTVWeb"
+      },
+      "command_channel_api": {
+        "production": "http://52.242.23.183/AppTVWeb/api/Data",
+        "development": "http://52.242.23.183/AppTVWeb/api/Data",
+        "staging": "http://52.242.23.183/AppTVWeb/api/Data"
+      },
+      "api_v1": {
+        "production": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo",
+        "development": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo",
+        "staging": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo"
+      },
+      "api_v2": {
+        "production": "https://edipa-apm-hdd-cace.azure-api.net/edipa",
+        "development": "https://edipa-apm-hdd-cace.azure-api.net/edipa",
+        "staging": "https://edipa-apm-hdd-cace.azure-api.net/edipa"
+      },
+      "api_mock": {
+        "production": "http://192.168.0.15/meetings",
+        "development": "http://hoc-mp-info.herokuapp.com",
+        "staging": "http://127.0.0.1:5000"
+      },
+      "supplemental_services": {
+        "production": "http://iptvdev.canadaeast.cloudapp.azure.com",
+        "development": "http://iptvdev.canadaeast.cloudapp.azure.com",
+        "staging": "http://192.168.0.15"
+      },
+      "metadata": {
+        "production": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo/signalr",
+        "development": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo/signalr",
+        "staging": "http://iptvdev.canadaeast.cloudapp.azure.com/IPTVMPInfo/signalr"
+      },
+      "metadata2": {
+        "production": "http://iptvdev.canadaeast.cloudapp.azure.com/WebHookRelay",
+        "development": "http://iptvdev.canadaeast.cloudapp.azure.com/WebHookRelay",
+        "staging": "http://iptvdev.canadaeast.cloudapp.azure.com/WebHookRelay"
+      },
+      "generator_guid": {
+        "production": "https://www.uuidgenerator.net/api/version1",
+        "development": "https://www.uuidgenerator.net/api/version1",
+        "staging": "https://www.uuidgenerator.net/api/version1"
+      },
+      "generator_qr_code": {
+        "production": "https://api.qrserver.com/v1/create-qr-code",
+        "development": "https://api.qrserver.com/v1/create-qr-code",
+        "staging": "https://api.qrserver.com/v1/create-qr-code"
+      },
+      "platform_login": {
+        "production": "https://sliqnew.b2clogin.com/sliqnew.onmicrosoft.com/B2C_1A_signup_signin_sliq/v2.0/.well-known/openid-configuration",
+        "development": "https://platformdev1.b2clogin.com/platformdev1.onmicrosoft.com/B2C_1A_signup_signin_sliq/v2.0/.well-known/openid-configuration",
+        "staging": "https://platformstaging.b2clogin.com/platformstaging.onmicrosoft.com/B2C_1A_signup_signin_sliq/v2.0/.well-known/openid-configuration"
+      },
+      "platform_login_scope": {
+        "production": "https://sliqnew.onmicrosoft.com/usermanagementapi/ACL.Read",
+        "development": "https://PlatformDev1.onmicrosoft.com/sliqapi/Access",
+        "staging": "https://Platformstaging.onmicrosoft.com/sliqapi/Access"
+      },
+      "platform_login_client_id": {
+        "production": "7f12870f-1631-4a44-a096-4ed1e860145c",
+        "development": "2cd995b4-cc63-42fe-a782-d784b83004d1",
+        "staging": "a1d31213-cee0-40f5-b80e-55993daee740"
+      },
+      "platform_login_redirect_url": {
+        "production": "com.sliq.parlvu://oauth2/redirect",
+        "development": "com.sliq.parlvu://oauth2/redirect",
+        "staging": "com.sliq.parlvu://oauth2/redirect"
+      },
+      "youtube_login": {
+        "production": {
+          "android_client_id": "290473715391-b3g1rgphe54l5s7o4nufc59sm4tbs5is.apps.googleusercontent.com",
+          "ios_client_id": "290473715391-jd9o7n9219npsbghihesntngb0l95rk2.apps.googleusercontent.com",
+          "android_redirect_url": "com.sliq.parlvu://",
+          "ios_redirect_url": "com.sliq.ParlVU-XP://"
+        },
+        "development": {
+          "android_client_id": "290473715391-b3g1rgphe54l5s7o4nufc59sm4tbs5is.apps.googleusercontent.com",
+          "ios_client_id": "290473715391-jd9o7n9219npsbghihesntngb0l95rk2.apps.googleusercontent.com",
+          "android_redirect_url": "com.sliq.parlvu://",
+          "ios_redirect_url": "com.sliq.ParlVU-XP://"
+        },
+        "staging": {
+          "android_client_id": "290473715391-b3g1rgphe54l5s7o4nufc59sm4tbs5is.apps.googleusercontent.com",
+          "ios_client_id": "290473715391-jd9o7n9219npsbghihesntngb0l95rk2.apps.googleusercontent.com",
+          "android_redirect_url": "com.sliq.parlvu://",
+          "ios_redirect_url": "com.sliq.ParlVU-XP://"
+        }
+      },
+      "restream_token_api": {
+        "production": "https://sliq.stream/RestreamTokenAPI",
+        "development": "https://dev.sliq.stream/RestreamTokenAPI",
+        "staging": "https://staging.sliq.stream/RestreamTokenAPI"
+      },
+      "clip_edit_web": {
+        "production": "https://senparlvucewa.parl.gc.ca",
+        "development": "https://senparlvucewa.parl.gc.ca",
+        "staging": "https://senparlvucewa.parl.gc.ca"
+      },
+      "clip_edit_publish": {
+        "production": "https://socialmultipublish.azurewebsites.net",
+        "development": "https://socialmultipublish.azurewebsites.net",
+        "staging": "https://socialmultipublish.azurewebsites.net"
+      }
+    }
+  },
+  "urls2": {
+      "endpoints":[
+          {
+              "name": "Nunatsiavut",
+              "id": 280,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00280/harmony/en/api/data"
+          },
+          {
+              "name": "Maine Legislature",
+              "id": 281,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00281/harmony/en/api/data"
+          },
+          {
+              "name": "Oklahoma Senate",
+              "id": 282,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00282/harmony/en/api/data"
+          },
+          {
+              "name": "Oklahoma House",
+              "id": 283,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00283/harmony/en/api/data"
+          },
+          {
+              "name": "Arkansas House",
+              "id": 284,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00284/harmony/en/api/data"
+          },
+          {
+              "name": "Iowa Legislature",
+              "id": 285,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00285/harmony/en/api/data"
+          },
+          {
+              "name": "New Hampshire Senate",
+              "id": 286,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00286/harmony/en/api/data"
+          },
+          {
+              "name": "Kansas Legislature",
+              "id": 287,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00287/harmony/en/api/data"
+          },
+          {
+              "name": "New Hampshire House",
+              "id": 288,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00288/harmony/en/api/data"
+          },
+          {
+              "name": "West Virginia Senate",
+              "id": 289,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00289/harmony/en/api/data"
+          },
+          {
+              "name": "Bermuda Parliament",
+              "id": 290,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00290/harmony/en/api/data"
+          },
+          {
+              "name": "New Mexico Shared Services",
+              "id": 293,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00293/harmony/en/api/data"
+          },
+          {
+              "name": "New Mexico NPRC",
+              "id": 302,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00302/harmony/en/api/data"
+          },
+          {
+              "name": "Virginia House",
+              "id": 304,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00304/harmony/en/api/data"
+          },
+          {
+              "name": "Hawaii",
+              "id": 305,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00305/harmony/en/api/data"
+          },
+          {
+              "name": "Montana",
+              "id": 309,
+              "harmonyapi": "http://sg001-harmony.sliq.net/00309/harmony/en/api/data"
+          },
+          {
+              "name": "Arkansas Bureau",
+              "id": 315,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00284/harmony/en/api/data"
+          },
+          {
+              "name": "Arkansas Senate",
+              "id": 315,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00284/harmony/en/api/data"
+          },
+          {
+              "name": "Wyoming",
+              "id": 323,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00323/harmony/en/api/data"
+          },
+          {
+              "name": "Nevada",
+              "id": 324,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00324/harmony/en/api/data"
+          },
+          {
+              "name": "Missouri",
+              "id": 325,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00325/harmony/en/api/data"
+          },
+          {
+              "name": "Colorado",
+              "id": 327,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00327/harmony/en/api/data"
+          },
+          {
+              "name": "Pennsylvania",
+              "id": 328,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00328/harmony/en/api/data"
+          },
+          {
+              "name": "Delaware",
+              "id": 329,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00329/harmony/en/api/data"
+          },
+          {
+              "name": "West Vancouver",
+              "id": 200,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00200/harmony/en/api/data"
+          },
+          {
+              "name": "Penticton",
+              "id": 201,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00201/harmony/en/api/data"
+          },
+          {
+              "name": "City of Sarnia",
+              "id": 291,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00291/harmony/en/api/data"
+          },
+          {
+              "name": "Sioux Lookout",
+              "id": 292,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00292/harmony/en/api/data"
+          },
+          {
+              "name": "Whistler",
+              "id": 295,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00295/harmony/en/api/data"
+          },
+          {
+              "name": "Kingston",
+              "id": 296,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00296/harmony/en/api/data"
+          },
+          {
+              "name": "Camrose",
+              "id": 297,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00297/harmony/en/api/data"
+          },
+          {
+              "name": "Saskatchewan Legislature",
+              "id": 298,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00298/harmony/en/api/data"
+          },
+          {
+              "name": "Fredericton",
+              "id": 299,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00299/harmony/en/api/data"
+          },
+          {
+              "name": "Vernon",
+              "id": 301,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00301/harmony/en/api/data"
+          },
+          {
+              "name": "Greenstone",
+              "id": 306,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00306/harmony/en/api/data"
+          },
+          {
+              "name": "NFLD",
+              "id": 307,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00307/harmony/en/api/data"
+          },
+          {
+              "name": "Quebec Assembly",
+              "id": 308,
+              "harmonyapi": ""
+          },
+          {
+              "name": "Windsor",
+              "id": 310,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00310/harmony/en/api/data"
+          },
+          {
+              "name": "Alberta",
+              "id": 313,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00313/harmony/en/api/data"
+          },
+          {
+              "name": "Riverview",
+              "id": 314,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00314/harmony/en/api/data"
+          },
+          {
+              "name": "Vancouver",
+              "id": 317,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00317/harmony/en/api/data"
+          },
+          {
+              "name": "Vancouver Parks",
+              "id": 318,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00318/harmony/en/api/data"
+          },
+          {
+              "name": "Abbotsford",
+              "id": 319,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00310/harmony/en/api/data"
+          },
+          {
+              "name": "ICAO",
+              "id": 320,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00320/harmony/en/api/data"
+          },
+          {
+              "name": "Leamington",
+              "id": 321,
+              "harmonyapi": "https://sg001-harmony.sliq.net/00321/harmony/en/api/data"
+          }
+      ]
+      
+      }
+}
 
