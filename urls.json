@@ -2,8 +2,8 @@
   "app_version": "0.7.5",
   "config_version": 10,
   "LastModifiedTime": "2022-02-15 09:00:00 +0000",
-  "initialStartupSelection": "hoc",
-  "isCustomersHFA": "false",
+  "initialStartupSelection": "soc",
+  "isCustomersHFA": "true",
   "urls": {
     "hoc": {
       "api": {
