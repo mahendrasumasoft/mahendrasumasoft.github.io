@@ -3,7 +3,7 @@
   "config_version": 10,
   "LastModifiedTime": "2022-02-15 09:00:00 +0000",
   "initialStartupSelection": "soc",
-  "isCustomersHFA": "true",
+  "isCustomersHFA": "false",
   "urls": {
     "hoc": {
       "api": {
